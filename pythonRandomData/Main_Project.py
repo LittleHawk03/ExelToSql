@@ -9,7 +9,7 @@ root.withdraw()
 
 
 k = int(input("so hang : "))
-print('id - '+'id_identity - '+'gender - '+'time - '+ 'email - '+ 'object')
+print('id - '+'id_identity - '+'gender - '+'time - '+ 'email - '+'diem -'+ 'object')
 selection_data = input('nhap ten lua chon : ').lower()
 
 #
@@ -38,6 +38,8 @@ for i in range(k):
         file_write.write(node_path.random_time() + '\n')
     elif selection_data == 'email':
         file_write.write(node_path.random_email() + '\n')
+    elif selection_data == 'diem':
+        file_write.write(node_path.random_point() + '\n')
     elif selection_data == 'object':
         #
         # lần mở thứ hai để mở file dữ liệu de doc

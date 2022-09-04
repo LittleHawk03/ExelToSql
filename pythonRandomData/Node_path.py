@@ -42,4 +42,9 @@ class Node_path():
         ran_time = St_time + k * (En_time - St_time)
 
         return time.strftime('%m/%d/%Y', time.localtime(ran_time))
+    
+    def random_point(self):
+        t = random.randint(3,10)
+        return str(t)
+        
 
