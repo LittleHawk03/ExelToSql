@@ -41,7 +41,7 @@ db_name = input('---- Enter the name of Database : ').upper()
 
 cursor = conn.cursor()
 cursor.execute('USE ' + db_name + '')
-cursor.execute('SELECT * FROM SINHVIEN')
+# cursor.execute('SELECT * FROM SINHVIEN')
 
 
 #
