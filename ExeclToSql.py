@@ -37,7 +37,7 @@ conn = connectToServer()
 # ví dụ muốn dử dụng database nào ta dùng lệnh USE DATABASE
 # #
 
-db_name = input('---- Enter the name of Database : ').upper()
+db_name = input('---- Enter the name of Database : ')
 
 cursor = conn.cursor()
 cursor.execute('USE ' + db_name + '')
